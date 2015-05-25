@@ -11,6 +11,6 @@ public class acelerometer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Translate(Input.acceleration.x * 0.3f, Input.acceleration.y * 0.3f,0);
-		transform.eulerAngles = new Vector3(pitch,0,roll)
+		//transform.eulerAngles = new Vector3(pitch,0,roll)
 	}
 }
