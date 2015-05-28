@@ -1,13 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\acelerometer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Movement.cs">
     <Files>
-      <File FileName="Assets\Scripts\acelerometer.cs" Line="15" Column="3" />
-      <File FileName="Assets\Scripts\Movement.cs" Line="27" Column="25" />
+      <File FileName="Assets\Scripts\Movement.cs" Line="47" Column="4" />
+      <File FileName="Assets\Scripts\acelerometer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Alexis\Documents\GitHub\ProyectoIntegrador2D\2DTest\Assets\Scripts\Movement.cs" line="40" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
