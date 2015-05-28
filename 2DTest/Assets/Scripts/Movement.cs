@@ -11,7 +11,6 @@ public class Movement : MonoBehaviour {
 	void Start (){
 		
 		initPos = new Vector3 (3.5f, 2.5f, 0);
-		
 	}
 	
 	void Update (){
@@ -20,6 +19,8 @@ public class Movement : MonoBehaviour {
 		Vector3 v= ResetTarget (initPos);
 		initPos = v;
 		transform.position = Vector3.MoveTowards (transform.position, v, step);
+
+		resetPosition (transform.position.x, transform.position.y);
 	}
 	
 	private Vector3 ResetTarget (Vector3 vec){
@@ -35,14 +36,17 @@ public class Movement : MonoBehaviour {
 		return Random.Range(1, 3);
 	}
 	
-	private bool resetPosition(float xPosition, float yPosition){
+	private void resetPosition(float xPosition, float yPosition){
 		if(xPosition <= 0.0f || xPosition >= 24.0f &&
 		   yPosition <= -3.5f || yPosition >= 3.5f){
 			
-			Vector3 initialPosition = new Vector2(1.5f, 1.5f);
-			target = initialPosition;
-			return true;
+			//Vector3 initialPosition = new Vector2(1.5f, 1.5f);
+			//target = initialPosition;
+			Destroy(this.gameObject);
+			GameObject angryBird = new GameObject();
+
+			//return true;
 		}
-		return false;
+		//return false;
 	}
 }
