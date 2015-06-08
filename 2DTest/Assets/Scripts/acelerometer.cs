@@ -19,8 +19,6 @@ public class acelerometer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//transform.Translate(Input.acceleration.x * 0.3f, Input.acceleration.y * 0.3f,0);
-
 		Gx = Input.acceleration.x * alpha + (Gx * (1.0f - alpha));
 		Gy = Input.acceleration.y * alpha + (Gy * (1.0f - alpha));
 		Gz = Input.acceleration.z * alpha + (Gz * (1.0f - alpha));
