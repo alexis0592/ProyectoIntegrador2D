@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8d22a7e7221d65a4492b7d8897ed3025
 timeCreated: 1432826138
+=======
+guid: 0568c7e14fb029e428d175a792c39058
+timeCreated: 1432814218
+>>>>>>> origin/parabolicMovement
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
