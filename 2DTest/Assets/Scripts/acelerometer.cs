@@ -30,9 +30,8 @@ public class acelerometer : MonoBehaviour {
 
 		vector = new Vector3 (roll(), - pitch (), 0);
 		transform.eulerAngles = vector;
-		transform.Translate(vector);
-
-
+		transform.Translate(vector * 0.3f);
+		
 	}
 
 	private float pitch(){
