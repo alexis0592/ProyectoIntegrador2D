@@ -27,6 +27,7 @@ public class acelerometer : MonoBehaviour {
 		//transform.Translate(Input.acceleration.x * 0.3f, Input.acceleration.y * 0.3f,0);
 		//yRotation += Input.GetAxis("Horizontal");
 		//transform.eulerAngles = new Vector3(10, yRotation, 0);
+		this.resetTargetPosition (transform.position.x, transform.position.y);
 
 		vector = new Vector3 (roll(), - pitch (), 0);
 		transform.eulerAngles = vector;
@@ -40,5 +41,26 @@ public class acelerometer : MonoBehaviour {
 
 	private float roll(){
 		return Mathf.Atan(-Gx/Gz);
+	}
+
+	private void resetTargetPosition(float xPos, float yPos){
+		Vector3 targetPos;
+		if (xPos < -1.3f ) {
+			targetPos = new Vector3(-1.4f, yPos, 0);
+			transform.position = targetPos;
+		}
+		if (xPos > 28.5f) {
+			targetPos = new Vector3(28.0f, yPos, 0);
+			transform.position = targetPos;
+		}
+		if (yPos < -3.1f) {
+			targetPos = new Vector3(xPos, -3.0f, 0);
+			transform.position = targetPos;
+		}
+		if (yPos > 3.6f) {
+			targetPos = new Vector3(xPos, 3.5f, 0);
+			transform.position = targetPos;
+		}
+		
 	}
 }
