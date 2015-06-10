@@ -7,5 +7,9 @@ Temp
 *.pidb
 *.sln
 *.log
-*.sln
 2DTest/Library/assetDatabase3
+2DTest/Library/metadata/*
+2DTest/Library/metadata/00/00000000000000004000000000000000
+*.info
+2DTest/Library/metadata/6d/6dec562068e964a4ab0199b02064f8fb
+*.log
